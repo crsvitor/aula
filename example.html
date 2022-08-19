@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo</title>
+  <style>
+    /** Nosso estilo vem aqui */
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgb(187, 187, 187);
+    }
+
+    h1 a {
+      padding: 0 8px;
+      text-decoration: none;
+      color: black;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      float: left;
+      padding: 16px;
+    }
+
+    li:hover {
+      background-color: rgb(187, 187, 187);
+    }
+
+    li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    li button {
+      background-color: rgb(114, 180, 255);
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      
+    }
+
+    button {
+      background-color: rgb(114, 180, 255);
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1><a href="example.html">Título</a></h1>
+    <ul>
+      <li><a href="section1.html">Seção 1</a></li>
+      <li><a href="section2.html">Seção 2</a></li>
+      <li><a href="section3.html">Seção 3</a></li>
+    </ul>
+    <button onclick="setAlert()">Botão</button>
+  </nav>
+
+  <h1>Home</h1>
+
+  <script>
+      // Nossa lógica vem aqui
+      function setAlert() {
+        alert("Botão clickado");
+      }
+  </script>
+</body>
+</html>
